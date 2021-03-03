@@ -53,7 +53,7 @@ public class GunSniper : MonoBehaviour
             return;
 
         if (currentAmmo <= 0f)
-        {
+        {            
             StartCoroutine(Reload());
             return;
         }
@@ -61,7 +61,7 @@ public class GunSniper : MonoBehaviour
         //ammoDisplay.text = currentAmmo.ToString();
         if (Input.GetButtonDown("Fire1") && Time.time >+ nextTimeToFire)
         {
-            CameraShaker.Instance.ShakeOnce(5f, 5f, .1f, 1f);
+            CameraShaker.Instance.ShakeOnce(10f, 10f, .1f, 1f);
             Debug.Log("Shaking");
             gameSound.clip = clipFire;
             gameSound.Play();

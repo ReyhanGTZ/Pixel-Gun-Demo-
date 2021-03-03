@@ -15,17 +15,18 @@ public class ScopeSniper : MonoBehaviour
 
     void Update ()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (!Input.GetButtonDown("Fire2"))
         {
-            isScoped = !isScoped;
-            Animator.SetBool("Scope2", isScoped);
-
-            //scopeOverlay.SetActive(isScoped);
-            if (isScoped)
-                StartCoroutine(OnScoped());
-            else
-                OnUnscoped();    
+            return;
         }
+        isScoped = !isScoped;
+        Animator.SetBool("Scope2", isScoped);
+
+        //scopeOverlay.SetActive(isScoped);
+        if (!isScoped)
+            OnUnscoped();
+        else
+            StartCoroutine(OnScoped());
     }
 
     void OnUnscoped ()
