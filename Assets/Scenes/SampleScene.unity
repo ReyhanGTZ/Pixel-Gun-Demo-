@@ -2827,6 +2827,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sniper
       objectReference: {fileID: 0}
+    - target: {fileID: 697882803011008175, guid: d2d06d567e33ad6479e85cbfa012a9cb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1019460357064687799, guid: d2d06d567e33ad6479e85cbfa012a9cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2900,6 +2905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AK47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5566241930624818005, guid: 5a00eaf3d5d973d4e8874ea0b1000521,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5566241930624818010, guid: 5a00eaf3d5d973d4e8874ea0b1000521,
         type: 3}
